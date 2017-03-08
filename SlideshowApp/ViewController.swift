@@ -8,10 +8,44 @@
 
 import UIKit
 
+
+
+
 class ViewController: UIViewController {
+
+
+    
+    @IBAction func startButton(sender: AnyObject) {
+
+        
+    }
+    
+//    @IBOutlet weak var startButton: UIButton!
+    
+//    @IBAction func startButton(sender: UIButton) {
+ //       startButton.setTitle("停止", forState: UIControlState.Normal)
+        
+        
+//    }
+    
+//    @IBOutlet weak var startButton: UIButton!
 
     @IBOutlet weak var imageView: UIImageView!
     
+
+    
+//    @IBAction func startButton(sender: UIButton) {
+ //       myButton.setTitle("停止", forState: UIControlState.Normal)
+//
+//    }
+    
+    
+//    @IBAction func startButton(sender: AnyObject) {
+        
+
+  //  }
+    
+  
     @IBAction func onPrev(sender: AnyObject) {
         // 表示している画像の番号を1減らす
         dispImageNo -= 1
@@ -59,6 +93,9 @@ class ViewController: UIViewController {
         
         // Image Viewに読み込んだ画像をセット
         imageView.image = image
+        
+        
+        
     }
 
     override func viewDidLoad() {
@@ -67,13 +104,31 @@ class ViewController: UIViewController {
         
         let image = UIImage(named: "img1")
         imageView.image = image
-    }
+        
+//        startButton.setTitle("再生", forState: UIControlState.Normal)
+//        startButton.setTitle("停止", forState: UIControlState.Highlighted)
+//        startButton.addTarget(self, action: #selector(ViewController.buttonTapped(sender:)), for: .touchUpInside)
+        
+        //startButton.enabled = false
+
+
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // segueから遷移先のResultViewControllerを取得する
+        let resultViewController = segue.destinationViewController as! ResultViewController
+  //      let image = UIImage(named: "img1")
+        resultViewController.resultViewImage = "img1"
+  //      resultViewController.myName = myText.text
+    }
+    
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+    }
 
 }
 

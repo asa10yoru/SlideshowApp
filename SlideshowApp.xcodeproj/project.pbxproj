@@ -15,6 +15,7 @@
 		33F5C61C1E6BAFD5006345CC /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F5C6191E6BAFD5006345CC /* img3.png */; };
 		33F5C61D1E6BAFD5006345CC /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F5C61A1E6BAFD5006345CC /* img2.png */; };
 		33F5C61E1E6BAFD5006345CC /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F5C61B1E6BAFD5006345CC /* img1.png */; };
+		33FE93971E7058C3009F31E5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE93961E7058C3009F31E5 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		33F5C6191E6BAFD5006345CC /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
 		33F5C61A1E6BAFD5006345CC /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
 		33F5C61B1E6BAFD5006345CC /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		33FE93961E7058C3009F31E5 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = ../ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				33F5C6071E6BAF81006345CC /* AppDelegate.swift */,
 				33F5C6091E6BAF81006345CC /* ViewController.swift */,
 				33F5C60B1E6BAF81006345CC /* Main.storyboard */,
+				33FE93961E7058C3009F31E5 /* ResultViewController.swift */,
 				33F5C60E1E6BAF81006345CC /* Assets.xcassets */,
 				33F5C6101E6BAF81006345CC /* LaunchScreen.storyboard */,
 				33F5C6131E6BAF81006345CC /* Info.plist */,
@@ -149,6 +152,7 @@
 			files = (
 				33F5C60A1E6BAF81006345CC /* ViewController.swift in Sources */,
 				33F5C6081E6BAF81006345CC /* AppDelegate.swift in Sources */,
+				33FE93971E7058C3009F31E5 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +302,7 @@
 				33F5C6181E6BAF81006345CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

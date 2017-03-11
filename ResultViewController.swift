@@ -11,21 +11,15 @@ import UIKit
 class ResultViewController: UIViewController {
 //    @IBOutlet weak var label: UILabel!
     
-    @IBOutlet weak var resuViewLabel: UILabel!
     @IBOutlet weak var img2: UIImageView!
     
-    var resultViewImage:String?
+    var resultViewImage:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resuViewLabel.text = resultViewImage
-//        let image = UIImage(named: resultViewImage)
- //       let image = UIImage(named: "img1")
-  //      imageView.img2 = image
-        
+        img2.image = UIImage(named: resultViewImage)
 
-        
     }
     
     override func didReceiveMemoryWarning() {

@@ -39,9 +39,14 @@ class ViewController: UIViewController {
         
         // 画像の番号を１つ増やす
         dispImageNo += 1
+        
         // 画像の番号が正常な範囲を指しているかチェック
+        // 範囲より下を指している場合、最後の画像を表示
+        if dispImageNo < 0 {
+            dispImageNo = imageNameArray.count - 1  //.countで配列の総数
+        }
         // 範囲より上を指している場合、最初の画像を表示
-        if dispImageNo > 2 {
+        if dispImageNo > imageNameArray.count - 1 {
             dispImageNo = 0
         }
         
@@ -57,7 +62,7 @@ class ViewController: UIViewController {
     
     @IBAction func toumeiButton(sender: AnyObject) {
         if self.timer == nil {
-            self.timer = NSTimer.scheduledTimerWithTimeInterval( 2, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+
         }
         else {
             self.timer.invalidate()   // 現在のタイマーを破棄する
@@ -99,8 +104,12 @@ class ViewController: UIViewController {
     func displayImage() {
 
         // 画像の番号が正常な範囲を指しているかチェック
+        // 範囲より下を指している場合、最後の画像を表示
+        if dispImageNo < 0 {
+            dispImageNo = imageNameArray.count - 1
+        }
         // 範囲より上を指している場合、最初の画像を表示
-        if dispImageNo > 2 {
+        if dispImageNo > imageNameArray.count - 1 {
             dispImageNo = 0
         }
         
